@@ -1,0 +1,57 @@
+.home {
+
+    height: 100%;
+    width: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+
+    background-image: 
+                linear-gradient(   
+                    to right, 
+                    rgba($secondary-color,0.4), 
+                    rgba($primary-color,0.8)
+                ), 
+                url(../img/front.jpg);
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: none;
+    text-transform: uppercase;
+
+    &__name {
+
+        position: relative;
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        font-weight: weight(bold);
+        color: $lightpurple-color;
+        // border-bottom: 2px solid set-text-color($primary-color);
+
+        &:hover{
+
+            color:$white-color;
+            @include transition-ease;
+            cursor: default;
+        }
+
+        &__last
+        {
+
+            color: $white-color;
+            font-weight: weight(medium);
+        }
+
+    }
+
+
+    &__profession
+    {
+        // padding-top: 0.2rem;
+        font-size: 1.4rem;
+    }
+
+}
+

@@ -1,0 +1,98 @@
+.contact {
+
+    height: 100%;
+    width: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: 
+                linear-gradient(   
+                    to right, 
+                    rgba($secondary-color,0.4), 
+                    rgba($primary-color,0.8)
+                ), 
+                url(../img/front.jpg);
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: none;
+    text-transform: uppercase;
+
+
+    h2 {
+
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-weight: weight(bold);
+        color: $lightpurple-color;
+    }
+
+    &__list {
+
+        width: 80%;
+        margin: 0 auto;
+        // flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.1rem;
+
+    }
+
+    &__email {
+
+        width: 300px;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        .text-secondary {
+
+            padding-left: 0.5rem;
+            color: $white-color;
+            text-transform: capitalize;
+        }
+    }
+
+    &__phone {
+
+        width: 300px;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .text-secondary {
+
+            padding-left: 0.5rem;
+            color: $white-color;
+            text-transform: capitalize;
+        }
+
+    }
+
+    &__address {
+
+        width: 300px;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .text-secondary {
+
+            padding-left: 0.5rem;
+            color: $white-color;
+            text-transform: capitalize;
+        }
+
+    }
+
+}
+

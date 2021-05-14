@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$primary-color : #221b2c;
+$primary-color1 : #c0bac9;
+$secondary-color : #210253;
+$secondary-color1 : rgb(25, 4, 58);
+$lightpurple-color : rgb(181, 136, 255);
+$white-color : #fff;
+$black-color : #000;
+
+$font-weights : (
+    "light" : 300,
+    "regular" : 400,
+    "medium" : 500,
+    "bold" : 600,
+    "heavy" : 700,
+);
+
+@function weight($weight-name)
+{
+    @return map-get($font-weights , $weight-name);
+}
+
+
+@function set-text-color($color){
+
+    @if(lightness($color) > 40%) {
+
+        @return $black-color;
+    } 
+    @else {
+
+        @return $white-color;
+    }
+}
+
+
+
+@mixin transition-ease {
+
+    transition: all 0.5s ease-in-out;
+}
+
+
+@mixin media-sm {
+
+    @media screen and (max-width: 520px) and (min-width: 200px) {
+
+        @content;
+        
+    }
+}
+
+
+@mixin media-md {
+
+    @media screen and (min-width: 768px) {
+
+        @content;
+        
+    }
+}
+
+
+@mixin media-large {
+
+    @media screen and (min-width: 1024px) {
+
+        @content;
+        
+    }
+}
+
+
+@mixin media-xl {
+
+    @media screen and (min-width: 1600px) {
+
+        @content;
+        
+    }
+}
+
+
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
